@@ -1,19 +1,43 @@
 import pandas as pd
 import json
+import os
+from dotenv import load_dotenv
+from api.apiBase import fetch_data_from_api
+from database.config import create_connection
+
+load_dotenv()
 
 def main():
-    # Leer el archivo JSON
-    with open('info.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
+    api_url = 'https://api.coincap.io/v2/assets'
     
-    # Si el JSON es un diccionario único, convertirlo a una lista
+    data = fetch_data_from_api(api_url)
+    
+    create_json_file(data)
+
     if isinstance(data, dict):
         data = [data]
-    
-    # Crear DataFrame y guardar en Excel
-    df = pd.DataFrame(data)
-    df.to_excel('output.xlsx', index=False)
-    print("Archivo Excel 'output.xlsx' generado exitosamente.")
+
+    # df_api = pd.DataFrame(data)
+    df_api = pd.json_normalize(data, record_path=['data'], meta=['timestamp'])
+    print(df_api)
+    create_xlsx_file(df_api)
+ 
+    if os.getenv('DB_CONNECTION'):
+        conn = create_connection()
+        if conn:
+            df_api = df_api.applymap(lambda x: str(x) if isinstance(x, list) else x)
+            df_api.to_sql('table_name', conn, if_exists='replace', index=False)
+            print("Datos insertados en la base de datos exitosamente.")
+            conn.close()
+
+def create_json_file(data):
+    with open('request_api_json.json', 'w') as json_file:
+        json.dump(data, json_file, indent=4)
+    print("Archivo JSON 'request_api_json.json' generado exitosamente.")
+
+def create_xlsx_file(df):
+    df.to_excel('request_api_xlsx.xlsx', index=False)
+    print("Archivo Excel 'request_api_xlsx.xlsx' generado exitosamente.")
 
 if __name__ == '__main__':
     main()
