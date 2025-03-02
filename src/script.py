@@ -25,13 +25,13 @@ def main():
 
     #audit_data_md(df_api)
  
-    if os.getenv('DB_CONNECTION'):
-        conn = create_connection()
-        if conn:
-            df_api = df_api.applymap(lambda x: str(x) if isinstance(x, list) else x)
-            df_api.to_sql('table_name', conn, if_exists='replace', index=False)
-            print("Datos insertados en la base de datos exitosamente.")
-            conn.close()
+
+    conn = create_connection()
+    if conn:
+        df_api = df_api.applymap(lambda x: str(x) if isinstance(x, list) else x)
+        df_api.to_sql('table_name', conn, if_exists='replace', index=False)
+        print("Datos insertados en la base de datos exitosamente.")
+        conn.close()
 
 if __name__ == '__main__':
     main()
