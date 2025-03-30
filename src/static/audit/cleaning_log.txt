@@ -1,0 +1,729 @@
+[2025-03-10 19:51:27] Inicio proceso de limpieza de datos
+
+[2025-03-10 19:51:27] Conexión a la base de datos establecida y datos recuperados de coinlore
+
+[2025-03-10 19:51:27] DataFrame inicial creada con forma:
+(100, 16)
+
+[2025-03-10 19:51:27] Información de DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    object 
+ 6   percent_change_24h  100 non-null    object 
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             92 non-null     object 
+dtypes: float64(2), int64(1), object(13)
+memory usage: 12.6+ KB
+
+
+[2025-03-10 19:52:12] Inicio proceso de limpieza de datos
+
+[2025-03-10 19:52:12] Conexión a la base de datos establecida y datos recuperados de coinlore
+
+[2025-03-10 19:52:12] DataFrame inicial creada con forma:
+(100, 16)
+
+[2025-03-10 19:52:12] Información de DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    object 
+ 6   percent_change_24h  100 non-null    object 
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             92 non-null     object 
+dtypes: float64(2), int64(1), object(13)
+memory usage: 12.6+ KB
+
+
+[2025-03-10 19:52:12] Duplicados eliminados. Nueva forma:
+(100, 16)
+
+[2025-03-10 19:52:12] Creando el array con las columnas que van a convertirse a numéricas: 
+['price_usd', 'percent_change_24h', 'msupply']
+
+[2025-03-10 19:52:12] convertiendo las columnas a numéricas
+
+[2025-03-10 19:52:12] información de DataFrame con las columnas convertidas a numéricas: 
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    float64
+ 6   percent_change_24h  100 non-null    float64
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             62 non-null     float64
+dtypes: float64(5), int64(1), object(10)
+memory usage: 13.3+ KB
+
+
+[2025-03-10 19:52:12] DataFrame final creada con forma: 
+(100, 16)
+
+[2025-03-10 19:52:12] Llenando valores nulos
+
+[2025-03-10 19:52:12] DataFrameb despues de eliminar  elementos son nulos: 
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    float64
+ 6   percent_change_24h  100 non-null    float64
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             100 non-null    float64
+dtypes: float64(5), int64(1), object(10)
+memory usage: 13.3+ KB
+
+
+[2025-03-10 19:52:12] Archivo CSV generado
+
+[2025-03-10 19:52:12] Archivo Excel generado
+
+[2025-03-10 19:52:13] Tabla de limpieza creada: 
+coinlore_clean
+
+[2025-03-10 20:37:00] Inicio proceso de limpieza de datos
+
+[2025-03-10 20:37:00] Conexión a la base de datos establecida y datos recuperados de coinlore
+
+[2025-03-10 20:37:00] DataFrame inicial creada con forma:
+(100, 16)
+
+[2025-03-10 20:37:00] Información de DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    object 
+ 6   percent_change_24h  100 non-null    object 
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             92 non-null     object 
+dtypes: float64(2), int64(1), object(13)
+memory usage: 12.6+ KB
+
+
+[2025-03-10 20:37:00] Duplicados eliminados. Nueva forma:
+(100, 16)
+
+[2025-03-10 20:37:00] Creando el array con las columnas que van a convertirse a numéricas: 
+['price_usd', 'percent_change_24h', 'msupply']
+
+[2025-03-10 20:37:00] convertiendo las columnas a numéricas
+
+[2025-03-10 20:37:00] información de DataFrame con las columnas convertidas a numéricas: 
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    float64
+ 6   percent_change_24h  100 non-null    float64
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             62 non-null     float64
+dtypes: float64(5), int64(1), object(10)
+memory usage: 13.3+ KB
+
+
+[2025-03-10 20:37:00] DataFrame final creada con forma: 
+(100, 16)
+
+[2025-03-10 20:37:00] convertiendo la columna name a minusculas
+
+[2025-03-10 20:37:00] Llenando valores nulos
+
+[2025-03-10 20:40:07] Inicio proceso de limpieza de datos
+
+[2025-03-10 20:40:07] Conexión a la base de datos establecida y datos recuperados de coinlore
+
+[2025-03-10 20:40:07] DataFrame inicial creada con forma:
+(100, 16)
+
+[2025-03-10 20:40:07] Información de DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    object 
+ 6   percent_change_24h  100 non-null    object 
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             92 non-null     object 
+dtypes: float64(2), int64(1), object(13)
+memory usage: 12.6+ KB
+
+
+[2025-03-10 20:40:07] Duplicados eliminados. Nueva forma:
+(100, 16)
+
+[2025-03-10 20:40:07] Creando el array con las columnas que van a convertirse a numéricas: 
+['price_usd', 'percent_change_24h', 'msupply']
+
+[2025-03-10 20:40:07] convertiendo las columnas a numéricas
+
+[2025-03-10 20:40:07] información de DataFrame con las columnas convertidas a numéricas: 
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    float64
+ 6   percent_change_24h  100 non-null    float64
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             62 non-null     float64
+dtypes: float64(5), int64(1), object(10)
+memory usage: 13.3+ KB
+
+
+[2025-03-10 20:40:07] DataFrame final creada con forma: 
+(100, 16)
+
+[2025-03-10 20:40:07] convertiendo la columna name a minusculas
+
+[2025-03-10 20:40:07] Llenando valores nulos
+
+[2025-03-10 20:40:07] DataFrameb despues de eliminar  elementos son nulos: 
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    float64
+ 6   percent_change_24h  100 non-null    float64
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             100 non-null    float64
+dtypes: float64(5), int64(1), object(10)
+memory usage: 13.3+ KB
+
+
+[2025-03-10 20:40:07] Archivo CSV generado
+
+[2025-03-10 20:40:08] Archivo Excel generado
+
+[2025-03-10 20:40:09] Tabla de limpieza creada: 
+coinlore_clean
+
+[2025-03-10 20:42:03] Inicio proceso de limpieza de datos
+
+[2025-03-10 20:42:03] Conexión a la base de datos establecida y datos recuperados de coinlore
+
+[2025-03-10 20:42:03] DataFrame inicial creada con forma:
+(100, 16)
+
+[2025-03-10 20:42:03] Información de DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    object 
+ 6   percent_change_24h  100 non-null    object 
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             92 non-null     object 
+dtypes: float64(2), int64(1), object(13)
+memory usage: 12.6+ KB
+
+
+[2025-03-10 20:42:03] Duplicados eliminados. Nueva forma:
+(100, 16)
+
+[2025-03-10 20:42:03] Creando el array con las columnas que van a convertirse a numéricas: 
+['price_usd', 'percent_change_24h', 'msupply']
+
+[2025-03-10 20:42:03] convertiendo las columnas a numéricas
+
+[2025-03-10 20:42:03] información de DataFrame con las columnas convertidas a numéricas: 
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    float64
+ 6   percent_change_24h  100 non-null    float64
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             62 non-null     float64
+dtypes: float64(5), int64(1), object(10)
+memory usage: 13.3+ KB
+
+
+[2025-03-10 20:42:03] DataFrame final creada con forma: 
+(100, 16)
+
+[2025-03-10 20:42:03] convertiendo la columna name a minusculas
+
+[2025-03-10 20:42:03] Llenando valores nulos
+
+[2025-03-10 20:42:46] Inicio proceso de limpieza de datos
+
+[2025-03-10 20:42:46] Conexión a la base de datos establecida y datos recuperados de coinlore
+
+[2025-03-10 20:42:46] DataFrame inicial creada con forma:
+(100, 16)
+
+[2025-03-10 20:42:46] Información de DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    object 
+ 6   percent_change_24h  100 non-null    object 
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             92 non-null     object 
+dtypes: float64(2), int64(1), object(13)
+memory usage: 12.6+ KB
+
+
+[2025-03-10 20:42:46] Duplicados eliminados. Nueva forma:
+(100, 16)
+
+[2025-03-10 20:42:46] Creando el array con las columnas que van a convertirse a numéricas: 
+['price_usd', 'percent_change_24h', 'msupply']
+
+[2025-03-10 20:42:46] convertiendo las columnas a numéricas
+
+[2025-03-10 20:42:46] información de DataFrame con las columnas convertidas a numéricas: 
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    float64
+ 6   percent_change_24h  100 non-null    float64
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             62 non-null     float64
+dtypes: float64(5), int64(1), object(10)
+memory usage: 13.3+ KB
+
+
+[2025-03-10 20:42:46] DataFrame final creada con forma: 
+(100, 16)
+
+[2025-03-10 20:42:46] convertiendo la columna name a minusculas
+
+[2025-03-10 20:42:46] Llenando valores nulos
+
+[2025-03-10 20:43:42] Inicio proceso de limpieza de datos
+
+[2025-03-10 20:43:42] Conexión a la base de datos establecida y datos recuperados de coinlore
+
+[2025-03-10 20:43:42] DataFrame inicial creada con forma:
+(100, 16)
+
+[2025-03-10 20:43:42] Información de DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    object 
+ 6   percent_change_24h  100 non-null    object 
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             92 non-null     object 
+dtypes: float64(2), int64(1), object(13)
+memory usage: 12.6+ KB
+
+
+[2025-03-10 20:43:42] Duplicados eliminados. Nueva forma:
+(100, 16)
+
+[2025-03-10 20:43:42] Creando el array con las columnas que van a convertirse a numéricas: 
+['price_usd', 'percent_change_24h', 'msupply']
+
+[2025-03-10 20:43:42] convertiendo las columnas a numéricas
+
+[2025-03-10 20:43:42] información de DataFrame con las columnas convertidas a numéricas: 
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    float64
+ 6   percent_change_24h  100 non-null    float64
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             62 non-null     float64
+dtypes: float64(5), int64(1), object(10)
+memory usage: 13.3+ KB
+
+
+[2025-03-10 20:43:42] DataFrame final creada con forma: 
+(100, 16)
+
+[2025-03-10 20:43:42] convertiendo la columna name a minusculas
+
+[2025-03-10 20:43:42] Llenando valores nulos
+
+[2025-03-10 20:46:33] Inicio proceso de limpieza de datos
+
+[2025-03-10 20:46:33] Conexión a la base de datos establecida y datos recuperados de coinlore
+
+[2025-03-10 20:46:33] DataFrame inicial creada con forma:
+(100, 16)
+
+[2025-03-10 20:46:33] Información de DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    object 
+ 6   percent_change_24h  100 non-null    object 
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             92 non-null     object 
+dtypes: float64(2), int64(1), object(13)
+memory usage: 12.6+ KB
+
+
+[2025-03-10 20:46:33] Duplicados eliminados. Nueva forma:
+(100, 16)
+
+[2025-03-10 20:46:33] Creando el array con las columnas que van a convertirse a numéricas: 
+['price_usd', 'percent_change_24h', 'msupply']
+
+[2025-03-10 20:46:33] convertiendo las columnas a numéricas
+
+[2025-03-10 20:46:33] información de DataFrame con las columnas convertidas a numéricas: 
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    float64
+ 6   percent_change_24h  100 non-null    float64
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             62 non-null     float64
+dtypes: float64(5), int64(1), object(10)
+memory usage: 13.3+ KB
+
+
+[2025-03-10 20:46:33] DataFrame final creada con forma: 
+(100, 16)
+
+[2025-03-10 20:46:33] convertiendo la columna name a minusculas
+
+[2025-03-10 20:46:33] Llenando valores nulos
+
+[2025-03-10 20:46:33] Archivo CSV generado
+
+[2025-03-10 20:46:34] Archivo Excel generado
+
+[2025-03-10 20:46:34] Tabla de limpieza creada: 
+coinlore_clean
+
+[2025-03-10 20:49:49] Inicio proceso de limpieza de datos
+
+[2025-03-10 20:49:49] Conexión a la base de datos establecida y datos recuperados de coinlore
+
+[2025-03-10 20:49:49] DataFrame inicial creada con forma:
+(100, 16)
+
+[2025-03-10 20:49:49] Información de DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    object 
+ 6   percent_change_24h  100 non-null    object 
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             92 non-null     object 
+dtypes: float64(2), int64(1), object(13)
+memory usage: 12.6+ KB
+
+
+[2025-03-10 20:49:49] Duplicados eliminados. Nueva forma:
+(100, 16)
+
+[2025-03-10 20:49:49] Creando el array con las columnas que van a convertirse a numéricas: 
+['price_usd', 'percent_change_24h', 'msupply']
+
+[2025-03-10 20:49:49] convertiendo las columnas a numéricas
+
+[2025-03-10 20:49:49] información de DataFrame con las columnas convertidas a numéricas: 
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    float64
+ 6   percent_change_24h  100 non-null    float64
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             62 non-null     float64
+dtypes: float64(5), int64(1), object(10)
+memory usage: 13.3+ KB
+
+
+[2025-03-10 20:49:49] DataFrame final creada con forma: 
+(100, 16)
+
+[2025-03-10 20:49:49] convertiendo la columna name a minusculas
+
+[2025-03-10 20:49:49] Llenando valores nulos
+
+[2025-03-10 20:49:49] DataFrameb despues de eliminar  elementos son nulos: 
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 100 entries, 0 to 99
+Data columns (total 16 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   id                  100 non-null    object 
+ 1   symbol              100 non-null    object 
+ 2   name                100 non-null    object 
+ 3   nameid              100 non-null    object 
+ 4   rank                100 non-null    int64  
+ 5   price_usd           100 non-null    float64
+ 6   percent_change_24h  100 non-null    float64
+ 7   percent_change_1h   100 non-null    object 
+ 8   percent_change_7d   100 non-null    object 
+ 9   price_btc           100 non-null    object 
+ 10  market_cap_usd      100 non-null    object 
+ 11  volume24            100 non-null    float64
+ 12  volume24a           100 non-null    float64
+ 13  csupply             100 non-null    object 
+ 14  tsupply             100 non-null    object 
+ 15  msupply             100 non-null    float64
+dtypes: float64(5), int64(1), object(10)
+memory usage: 13.3+ KB
+
+
+[2025-03-10 20:49:49] Archivo CSV generado
+
+[2025-03-10 20:49:49] Archivo Excel generado
+
+[2025-03-10 20:49:50] Tabla de limpieza creada: 
+coinlore_clean
+

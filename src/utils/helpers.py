@@ -62,11 +62,24 @@ def get_output_txt(df, method='info', rows=5):
         raise ValueError(f"Method {method} not supported")
         
     return buffer.getvalue()
-def log_step(message):
+def log_step(message, log_path='src/static/audit/cleaning_log.txt'):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    log_path = 'src/static/audit/cleaning_log.txt'
     with open(log_path, 'a', encoding='utf-8') as f:
         f.write(f"[{timestamp}] {message}\n")
+
+def convert_to_numeric(df, numeric_columns):
+    for column in numeric_columns:
+        df[column] = pd.to_numeric(df[column], errors='coerce')
+    return df
+
+def convert_to_lowercase(df, text_lowercase_columns):
+    for column in text_lowercase_columns:
+        df[column] = df[column].str.lower()
+    return df
+
+
+
+
 
 def audit_data(df, audit_filename='src/static/audit/auditoria.txt'):
 
