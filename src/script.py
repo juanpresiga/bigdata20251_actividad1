@@ -1,11 +1,11 @@
 import pandas as pd
 import os
-from dotenv import load_dotenv    
+#from dotenv import load_dotenv    
 from api.apiBase import fetch_data_from_api
 from static.db.config  import create_connection, create_table
 from utils.helpers import  audit_data, create_file
 
-load_dotenv()
+#load_dotenv()
 
 def main():
 
