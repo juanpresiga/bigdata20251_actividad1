@@ -33,5 +33,5 @@ volume24              0
 volume24a             0
 csupply               0
 tsupply               0
-msupply               9
+msupply               8
 dtype: int64
