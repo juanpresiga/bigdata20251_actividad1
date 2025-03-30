@@ -1,0 +1,380 @@
+[2025-03-10 02:49:55] Inicio proceso de limpieza de datos
+
+[2025-03-10 02:49:55] Conexión a la base de datos establecida y datos recuperados de coincap
+
+[2025-03-10 02:49:55] DataFrame inicial creada con forma:
+(100, 13)
+
+[2025-03-10 02:49:55] Información de DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 13 columns):
+ #   Column             Non-Null Count  Dtype 
+---  ------             --------------  ----- 
+ 0   id                 100 non-null    object
+ 1   rank               100 non-null    object
+ 2   symbol             100 non-null    object
+ 3   name               100 non-null    object
+ 4   supply             100 non-null    object
+ 5   maxSupply          38 non-null     object
+ 6   marketCapUsd       100 non-null    object
+ 7   volumeUsd24Hr      100 non-null    object
+ 8   priceUsd           100 non-null    object
+ 9   changePercent24Hr  100 non-null    object
+ 10  vwap24Hr           98 non-null     object
+ 11  explorer           98 non-null     object
+ 12  timestamp          100 non-null    int64 
+dtypes: int64(1), object(12)
+memory usage: 10.3+ KB
+
+
+[2025-03-10 02:49:55] Duplicados eliminados. Nueva forma:
+(100, 13)
+
+[2025-03-10 02:49:55] Creando el array con las columnas que van a convertirse a numéricas: 
+['maxSupply', 'supply', 'marketCapUsd', 'volumeUsd24Hr', 'priceUsd', 'changePercent24Hr', 'vwap24Hr']
+
+[2025-03-10 02:49:55] convertiendo las columnas a numéricas
+
+[2025-03-10 02:49:55] información de DataFrame con las columnas convertidas a numéricas: 
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 13 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   id                 100 non-null    object 
+ 1   rank               100 non-null    object 
+ 2   symbol             100 non-null    object 
+ 3   name               100 non-null    object 
+ 4   supply             100 non-null    float64
+ 5   maxSupply          38 non-null     float64
+ 6   marketCapUsd       100 non-null    float64
+ 7   volumeUsd24Hr      100 non-null    float64
+ 8   priceUsd           100 non-null    float64
+ 9   changePercent24Hr  100 non-null    float64
+ 10  vwap24Hr           98 non-null     float64
+ 11  explorer           98 non-null     object 
+ 12  timestamp          100 non-null    int64  
+dtypes: float64(7), int64(1), object(5)
+memory usage: 10.3+ KB
+
+
+[2025-03-10 02:49:55] DataFrame final creada con forma: 
+(100, 13)
+
+[2025-03-10 02:49:55] Llenando valores nulos
+
+[2025-03-10 02:49:55] DataFrameb despues de eliminar  elementos son nulos: 
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 13 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   id                 100 non-null    object 
+ 1   rank               100 non-null    object 
+ 2   symbol             100 non-null    object 
+ 3   name               100 non-null    object 
+ 4   supply             100 non-null    float64
+ 5   maxSupply          100 non-null    float64
+ 6   marketCapUsd       100 non-null    float64
+ 7   volumeUsd24Hr      100 non-null    float64
+ 8   priceUsd           100 non-null    float64
+ 9   changePercent24Hr  100 non-null    float64
+ 10  vwap24Hr           100 non-null    float64
+ 11  explorer           100 non-null    object 
+ 12  timestamp          100 non-null    int64  
+dtypes: float64(7), int64(1), object(5)
+memory usage: 10.3+ KB
+
+
+[2025-03-10 02:49:55] Archivo CSV generado
+
+[2025-03-10 02:49:55] Archivo Excel generado
+
+[2025-03-10 02:49:55] Tabla de limpieza creada: 
+coincap_clean
+
+[2025-03-15 00:17:33] Inicio proceso de limpieza de datos
+
+[2025-03-15 00:17:33] Conexión a la base de datos establecida y datos recuperados de coincap
+
+[2025-03-15 00:17:33] DataFrame inicial creada con forma:
+(100, 13)
+
+[2025-03-15 00:17:33] Información de DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 13 columns):
+ #   Column             Non-Null Count  Dtype 
+---  ------             --------------  ----- 
+ 0   id                 100 non-null    object
+ 1   rank               100 non-null    object
+ 2   symbol             100 non-null    object
+ 3   name               100 non-null    object
+ 4   supply             100 non-null    object
+ 5   maxSupply          43 non-null     object
+ 6   marketCapUsd       100 non-null    object
+ 7   volumeUsd24Hr      100 non-null    object
+ 8   priceUsd           100 non-null    object
+ 9   changePercent24Hr  99 non-null     object
+ 10  vwap24Hr           99 non-null     object
+ 11  explorer           89 non-null     object
+ 12  timestamp          100 non-null    int64 
+dtypes: int64(1), object(12)
+memory usage: 10.3+ KB
+
+
+[2025-03-15 00:17:33] Duplicados eliminados. Nueva forma:
+(100, 13)
+
+[2025-03-15 00:17:33] Creando el array con las columnas que van a convertirse a numéricas: 
+['maxSupply', 'supply', 'marketCapUsd', 'volumeUsd24Hr', 'priceUsd', 'changePercent24Hr', 'vwap24Hr']
+
+[2025-03-15 00:17:33] convertiendo las columnas a numéricas
+
+[2025-03-15 00:17:33] convertiendo las columna name a minuscula
+
+[2025-03-15 00:17:33] información de DataFrame con las columnas convertidas a numéricas: 
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 13 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   id                 100 non-null    object 
+ 1   rank               100 non-null    object 
+ 2   symbol             100 non-null    object 
+ 3   name               100 non-null    object 
+ 4   supply             100 non-null    float64
+ 5   maxSupply          43 non-null     float64
+ 6   marketCapUsd       100 non-null    float64
+ 7   volumeUsd24Hr      100 non-null    float64
+ 8   priceUsd           100 non-null    float64
+ 9   changePercent24Hr  99 non-null     float64
+ 10  vwap24Hr           99 non-null     float64
+ 11  explorer           89 non-null     object 
+ 12  timestamp          100 non-null    int64  
+dtypes: float64(7), int64(1), object(5)
+memory usage: 10.3+ KB
+
+
+[2025-03-15 00:17:33] DataFrame final creada con forma: 
+(100, 13)
+
+[2025-03-15 00:17:33] Llenando valores nulos
+
+[2025-03-15 00:17:33] DataFrameb despues de eliminar  elementos son nulos: 
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 13 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   id                 100 non-null    object 
+ 1   rank               100 non-null    object 
+ 2   symbol             100 non-null    object 
+ 3   name               100 non-null    object 
+ 4   supply             100 non-null    float64
+ 5   maxSupply          100 non-null    float64
+ 6   marketCapUsd       100 non-null    float64
+ 7   volumeUsd24Hr      100 non-null    float64
+ 8   priceUsd           100 non-null    float64
+ 9   changePercent24Hr  100 non-null    float64
+ 10  vwap24Hr           100 non-null    float64
+ 11  explorer           100 non-null    object 
+ 12  timestamp          100 non-null    int64  
+dtypes: float64(7), int64(1), object(5)
+memory usage: 10.3+ KB
+
+
+[2025-03-15 00:17:33] Archivo CSV generado
+
+[2025-03-15 00:17:33] Archivo Excel generado
+
+[2025-03-15 00:17:33] Tabla de limpieza creada: 
+coincap_clean
+
+[2025-03-30 01:00:36] Inicio proceso de limpieza de datos
+
+[2025-03-30 01:00:36] DataFrame df_name creado con forma: (100, 8)
+
+[2025-03-30 01:00:36] Información inicial del DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 8 columns):
+ #   Column             Non-Null Count  Dtype 
+---  ------             --------------  ----- 
+ 0   id                 100 non-null    object
+ 1   symbol             100 non-null    object
+ 2   maxSupply          43 non-null     object
+ 3   priceUsd           100 non-null    object
+ 4   volumeUsd24Hr      100 non-null    object
+ 5   changePercent24Hr  100 non-null    object
+ 6   vwap24Hr           93 non-null     object
+ 7   timestamp          100 non-null    int64 
+dtypes: int64(1), object(7)
+memory usage: 6.4+ KB
+
+
+[2025-03-30 01:00:36] Duplicados eliminados. Nueva forma: (100, 8)
+
+[2025-03-30 01:00:36] Columnas convertidas a numéricas: ['maxSupply', 'volumeUsd24Hr', 'priceUsd', 'changePercent24Hr', 'vwap24Hr']
+
+[2025-03-30 01:00:36] Valores nulos rellenados
+
+[2025-03-30 01:00:37] Archivos name guardados
+
+[2025-03-30 01:00:37] Tabla limpia df_name_clean creada
+
+[2025-03-30 01:00:37] DataFrame df_symbol creado con forma: (100, 6)
+
+[2025-03-30 01:00:37] Información inicial del DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 6 columns):
+ #   Column        Non-Null Count  Dtype 
+---  ------        --------------  ----- 
+ 0   id            100 non-null    object
+ 1   name          100 non-null    object
+ 2   rank          100 non-null    object
+ 3   supply        100 non-null    object
+ 4   explorer      88 non-null     object
+ 5   marketCapUsd  100 non-null    object
+dtypes: object(6)
+memory usage: 4.8+ KB
+
+
+[2025-03-30 01:00:37] Duplicados eliminados. Nueva forma: (100, 6)
+
+[2025-03-30 01:00:37] Columnas convertidas a numéricas: ['supply', 'marketCapUsd']
+
+[2025-03-30 01:00:37] Valores nulos rellenados
+
+[2025-03-30 01:00:37] Archivos symbol guardados
+
+[2025-03-30 01:00:37] Tabla limpia df_symbol_clean creada
+
+[2025-03-30 01:00:37] Proceso de limpieza finalizado exitosamente
+
+[2025-03-30 01:11:58] Inicio proceso de limpieza de datos
+
+[2025-03-30 01:11:58] DataFrame df_name creado con forma: (100, 8)
+
+[2025-03-30 01:11:58] Información inicial del DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 8 columns):
+ #   Column             Non-Null Count  Dtype 
+---  ------             --------------  ----- 
+ 0   id                 100 non-null    object
+ 1   symbol             100 non-null    object
+ 2   maxSupply          43 non-null     object
+ 3   priceUsd           100 non-null    object
+ 4   volumeUsd24Hr      100 non-null    object
+ 5   changePercent24Hr  100 non-null    object
+ 6   vwap24Hr           93 non-null     object
+ 7   timestamp          100 non-null    int64 
+dtypes: int64(1), object(7)
+memory usage: 6.4+ KB
+
+
+[2025-03-30 01:11:58] Duplicados eliminados. Nueva forma: (100, 8)
+
+[2025-03-30 01:11:58] Columnas convertidas a numéricas: ['maxSupply', 'volumeUsd24Hr', 'priceUsd', 'changePercent24Hr', 'vwap24Hr']
+
+[2025-03-30 01:11:58] Valores nulos rellenados
+
+[2025-03-30 01:11:58] Archivos name guardados
+
+[2025-03-30 01:11:58] Tabla limpia df_name_clean creada
+
+[2025-03-30 01:11:58] DataFrame df_symbol creado con forma: (100, 6)
+
+[2025-03-30 01:11:58] Información inicial del DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 6 columns):
+ #   Column        Non-Null Count  Dtype 
+---  ------        --------------  ----- 
+ 0   id            100 non-null    object
+ 1   name          100 non-null    object
+ 2   rank          100 non-null    object
+ 3   supply        100 non-null    object
+ 4   explorer      88 non-null     object
+ 5   marketCapUsd  100 non-null    object
+dtypes: object(6)
+memory usage: 4.8+ KB
+
+
+[2025-03-30 01:11:58] Duplicados eliminados. Nueva forma: (100, 6)
+
+[2025-03-30 01:11:58] Columnas convertidas a numéricas: ['supply', 'marketCapUsd']
+
+[2025-03-30 01:11:58] Valores nulos rellenados
+
+[2025-03-30 01:11:58] Archivos symbol guardados
+
+[2025-03-30 01:11:58] Tabla limpia df_symbol_clean creada
+
+[2025-03-30 01:11:58] Proceso de limpieza finalizado exitosamente
+
+[2025-03-30 15:27:26] Inicio proceso de limpieza de datos
+
+[2025-03-30 15:27:26] DataFrame df_name creado con forma: (100, 6)
+
+[2025-03-30 15:27:26] Información inicial del DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 6 columns):
+ #   Column        Non-Null Count  Dtype 
+---  ------        --------------  ----- 
+ 0   id            100 non-null    object
+ 1   name          100 non-null    object
+ 2   rank          100 non-null    object
+ 3   supply        100 non-null    object
+ 4   explorer      88 non-null     object
+ 5   marketCapUsd  100 non-null    object
+dtypes: object(6)
+memory usage: 4.8+ KB
+
+
+[2025-03-30 15:27:26] Duplicados eliminados. Nueva forma: (100, 6)
+
+[2025-03-30 15:27:26] Columnas convertidas a numéricas: ['supply', 'marketCapUsd']
+
+[2025-03-30 15:27:26] Columna name convertida a minúsculas
+
+[2025-03-30 15:27:26] Valores nulos rellenados
+
+[2025-03-30 15:27:26] Archivos name guardados
+
+[2025-03-30 15:27:26] Tabla limpia df_name_clean creada
+
+[2025-03-30 15:27:26] DataFrame df_symbol creado con forma: (100, 8)
+
+[2025-03-30 15:27:26] Información inicial del DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 8 columns):
+ #   Column             Non-Null Count  Dtype 
+---  ------             --------------  ----- 
+ 0   id                 100 non-null    object
+ 1   symbol             100 non-null    object
+ 2   maxSupply          43 non-null     object
+ 3   priceUsd           100 non-null    object
+ 4   volumeUsd24Hr      100 non-null    object
+ 5   changePercent24Hr  100 non-null    object
+ 6   vwap24Hr           93 non-null     object
+ 7   timestamp          100 non-null    int64 
+dtypes: int64(1), object(7)
+memory usage: 6.4+ KB
+
+
+[2025-03-30 15:27:26] Duplicados eliminados. Nueva forma: (100, 8)
+
+[2025-03-30 15:27:26] Valores nulos rellenados
+
+[2025-03-30 15:27:26] Archivos symbol guardados
+
+[2025-03-30 15:27:26] Tabla limpia df_symbol_clean creada
+
+[2025-03-30 15:27:26] Proceso de limpieza finalizado exitosamente
+

@@ -1,0 +1,17 @@
+Número de filas: 100
+Tipos de datos de cada columna:
+id              object
+name            object
+rank            object
+supply          object
+explorer        object
+marketCapUsd    object
+dtype: object
+Número de valores nulos en cada columna:
+id               0
+name             0
+rank             0
+supply           0
+explorer        12
+marketCapUsd     0
+dtype: int64
