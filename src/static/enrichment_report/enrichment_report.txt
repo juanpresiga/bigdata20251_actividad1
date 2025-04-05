@@ -34,3 +34,21 @@
 
 [2025-03-30 19:06:17] Proceso de enriquecimiento completado exitosamente
 
+[2025-04-05 16:17:31] Iniciando proceso de enriquecimiento de datos
+
+[2025-04-05 16:17:31] Datos cargados de df_name_clean. Forma: (100, 6)
+
+[2025-04-05 16:17:31] Datos cargados de df_symbol_clean. Forma: (100, 8)
+
+[2025-04-05 16:17:31] Columnas en df_name: id, name, rank, supply, explorer, marketCapUsd
+
+[2025-04-05 16:17:31] Columnas en df_symbol: id, symbol, maxSupply, priceUsd, volumeUsd24Hr, changePercent24Hr, vwap24Hr, timestamp
+
+[2025-04-05 16:17:31] Merge completado. Forma resultante: (100, 13)
+
+[2025-04-05 16:17:31] Archivos de datos enriquecidos guardados
+
+[2025-04-05 16:17:31] Datos guardados en SQLite
+
+[2025-04-05 16:17:31] Proceso de enriquecimiento completado exitosamente
+

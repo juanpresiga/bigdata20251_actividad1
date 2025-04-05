@@ -502,3 +502,65 @@ memory usage: 6.4+ KB
 
 [2025-03-30 19:06:16] Proceso de limpieza finalizado exitosamente
 
+[2025-04-05 16:17:30] Inicio proceso de limpieza de datos
+
+[2025-04-05 16:17:30] DataFrame df_name creado con forma: (100, 6)
+
+[2025-04-05 16:17:30] Información inicial del DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 6 columns):
+ #   Column        Non-Null Count  Dtype 
+---  ------        --------------  ----- 
+ 0   id            100 non-null    object
+ 1   name          100 non-null    object
+ 2   rank          100 non-null    object
+ 3   supply        100 non-null    object
+ 4   explorer      88 non-null     object
+ 5   marketCapUsd  100 non-null    object
+dtypes: object(6)
+memory usage: 4.8+ KB
+
+
+[2025-04-05 16:17:30] Duplicados eliminados. Nueva forma: (100, 6)
+
+[2025-04-05 16:17:30] Columnas convertidas a numéricas: ['supply', 'marketCapUsd']
+
+[2025-04-05 16:17:30] Columna name convertida a minúsculas
+
+[2025-04-05 16:17:30] Valores nulos rellenados
+
+[2025-04-05 16:17:30] Archivos name guardados
+
+[2025-04-05 16:17:30] Tabla limpia df_name_clean creada
+
+[2025-04-05 16:17:30] DataFrame df_symbol creado con forma: (100, 8)
+
+[2025-04-05 16:17:30] Información inicial del DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 8 columns):
+ #   Column             Non-Null Count  Dtype 
+---  ------             --------------  ----- 
+ 0   id                 100 non-null    object
+ 1   symbol             100 non-null    object
+ 2   maxSupply          42 non-null     object
+ 3   priceUsd           100 non-null    object
+ 4   volumeUsd24Hr      100 non-null    object
+ 5   changePercent24Hr  100 non-null    object
+ 6   vwap24Hr           93 non-null     object
+ 7   timestamp          100 non-null    int64 
+dtypes: int64(1), object(7)
+memory usage: 6.4+ KB
+
+
+[2025-04-05 16:17:30] Duplicados eliminados. Nueva forma: (100, 8)
+
+[2025-04-05 16:17:30] Valores nulos rellenados
+
+[2025-04-05 16:17:30] Archivos symbol guardados
+
+[2025-04-05 16:17:30] Tabla limpia df_symbol_clean creada
+
+[2025-04-05 16:17:30] Proceso de limpieza finalizado exitosamente
+
