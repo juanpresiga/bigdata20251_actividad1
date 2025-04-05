@@ -13,6 +13,7 @@ def main():
 
     api_url = api_url = 'https://api.coincap.io/v2/assets'
     
+    
     time.sleep(2)
     data = fetch_data_from_api(api_url)
 
