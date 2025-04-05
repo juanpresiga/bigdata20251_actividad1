@@ -1,5 +1,7 @@
 import pandas as pd
 import os
+import time
+import sys
 #from dotenv import load_dotenv    
 from api.apiBase import fetch_data_from_api
 from static.db.config  import create_connection, create_table
@@ -11,6 +13,7 @@ def main():
 
     api_url = api_url = 'https://api.coincap.io/v2/assets'
     
+    time.sleep(2)
     data = fetch_data_from_api(api_url)
 
     df_api = pd.json_normalize(data, record_path=['data'], meta=['timestamp'])
